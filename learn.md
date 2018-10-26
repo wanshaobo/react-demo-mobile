@@ -91,3 +91,5 @@ Provider的作用类似于提供一个大容器，将组件和Redux进行关联
 connect函数到底是如何将store和组件联系在一起
 React的Context,Context解决了一个React中很常见的问题：当你的组件嵌套越来越深的时候，context能让你父组件和其它里层组件之间的通信变的更方便
 
+[JavaScript 对象详解](http://www.365mini.com/page/javascript-new-array.htm)
+

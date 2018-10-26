@@ -28,12 +28,6 @@
 .section2{
     margin-top: 0.8rem;
 }
-.section2 .item-left{
-    box-shadow: 0 1.2rem 2rem #CDD6F5;
-}
-.section2 .item-right{
-    box-shadow: 0 1.2rem 2rem #FFF3E5;
-}
 .section2 .content{
     vertical-align: top;
 }
@@ -62,14 +56,14 @@
     color: #333333;
 }
 .item-left{
-    background: #EDF0FB;
+    background: #11ss22;
     border: 0.05rem solid #CDD6F5;
 }
 .item-left .type{
     color: #506EE0;
 }
 .item-right{
-    background: #FFF3E5;
+    background: #ff3433;
     border: 0.05rem solid #FFD4B7;
 }
 .item-right .type{
