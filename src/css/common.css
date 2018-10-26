@@ -1,0 +1,11 @@
+.common-back{
+    width: 24px;
+    height: 24px;
+}
+.fdr{
+    display: flex;
+    flex-direction: row;
+}
+.dib{
+    display: inline-block;
+}
