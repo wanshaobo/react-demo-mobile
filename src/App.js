@@ -1,4 +1,4 @@
-import React, { Component, PureComponent, } from 'react';
+import React, { Component, PureComponent} from 'react';
 import { Link, withRouter, NavLink } from 'react-router-dom'
 
 import './css/common.css';
@@ -55,6 +55,11 @@ class App extends React.Component {//PureComponent
 			</div>
 		);
 	}
+}
+
+//类的静态属性
+App.defaultProps = {
+
 }
 
 export default App;

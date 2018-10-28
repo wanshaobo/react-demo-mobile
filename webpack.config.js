@@ -82,11 +82,11 @@ module.exports = {
 	devServer: {
 		contentBase: './dist',//指定服务开启的位置，在dist文件夹中
 		// host: 'localhost',//127.0.0.1
-		host: '10.3.80.181',//127.0.0.1
-		port: 8080,
+		// host: '10.3.80.181',//127.0.0.1
+		// port: 8080,
 		historyApiFallback: true,
 		// hot: true,
-		inline: true,
+		inline: false,
 		progress:true,
 		compress: false
 	}
