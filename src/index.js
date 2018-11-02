@@ -8,6 +8,10 @@ import Search from './view/Search';
 import Notice from './view/Notice';
 import Course from './view/Course';
 import Exam from './view/Exam';
+
+import Context from './view/Context/Context';
+import Super from './view/Context/Super';
+import Sub from './view/Context/Sub';
 // ReactDOM.render(<App />, document.getElementById('root'));
 
 //两个路由方案：按需加载 常规加载
@@ -19,6 +23,7 @@ ReactDOM.render(
 			<Route path='/notice' component={ Notice }></Route>
 			<Route path='/course' component={ Course }></Route>
 			<Route path='/exam' component={ Exam }></Route>
+			<Route path='/context' component={ Context }></Route>
 			<Route path='/' component={ App }></Route>
 		</Switch>
 	</HashRouter>,

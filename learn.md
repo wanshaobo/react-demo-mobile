@@ -1,7 +1,3 @@
-flex-direction 主轴方向 column列 row行(默认)
-
-justify-content 主轴 对齐方式 flex-start flex-end center space-between space-around
-align-items 侧轴 对齐方式 flex-start flex-end center stretch baseline
 
 react-router
 exports.MemoryRouter = _MemoryRouter3.default;

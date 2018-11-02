@@ -4,17 +4,49 @@ import { Link, withRouter, NavLink } from 'react-router-dom'
 import './css/common.css';
 import './css/home.css';
 
+//纯组件
+const List = (props) => {
+
+	const cb = (msg) => {
+		return () => {
+			if(msg == 'clear'){
+				msg = ''
+			}
+			props.callback(msg)
+		}
+	}
+
+	return(
+		<div style={{
+			color:'#ff7777',border:'0.05rem solid green',
+			width: '5rem',fontSize:'1rem',textAlign:'center',
+			lineHeight:'1.5rem',
+			borderRadius:'0.5rem',marginTop:'0.5rem'}} onClick={cb(props.name)}>{ props.name }</div>
+	)
+}
+
 class App extends React.Component {//PureComponent
 
 	constructor(props) {//props,context
 		super(props);
+		this.state = {
+			name: '万少博',
+			button:''
+		}
 	}
+
+	callback(params){
+		this.setState({
+			button: params
+		})
+	}
+
 	render() {
 		return (
 			<div>
 				{/*头部*/}
 				<div className={"head"}>
-					<div className="name">万少博主页</div>
+					<div className="name">{this.state.name}主页</div>
 					<div>
 						<Link to="search"><img className="search" src={require('./img/home/search.png')} /></Link>
 						<Link to="notice"><img className="message" src={require('./img/home/search.png')} /></Link>
@@ -24,34 +56,33 @@ class App extends React.Component {//PureComponent
 				<div className="fdr section2">
 					<div className="item-left item fdr">
 						<Link to="course">
-							<img src={require('./img/home/search.png')} />
-							<div className='dib content'>
-								<div className='type'>视频</div>
-								<div className='number'>12</div>
-							</div>
+							<div className='dib content' style={{textAlign:'center'}}>获取手机硬件信息入口</div>
 						</Link>
 					</div>
 					<div className="item-right item fdr">
 						<Link to="exam">
-							<img src={require('./img/home/search.png')} />
-							<div className='dib content'>
-								<div className='type'>音频</div>
-								<div className='number'>5</div>
-							</div>
+							<div className='dib content' style={{textAlign:'center'}}>exam</div>
+						</Link>
+					</div>
+					<div className="item-right item fdr">
+						<Link to="context">
+							<div className='dib content' style={{textAlign:'center'}}>context通信入口</div>
 						</Link>
 					</div>
 				</div>
 				{/**/}
-				<div className='section3'>
-					<div className='fdr'>
-						<div style={{fontSize: 0}}>
-							<img src={require('./img/home/search.png')} />
-							<div style={{width: "2rem",height: "2rem", background: "#ff6700"}}></div>
-						</div>
-						<div>2</div>
-					</div>
+				<div style={{border: '1px solid red'}}>
+					<div style={{fontSize: '.6rem'}}>这个地方的文字可以被改变，请点击下面的按钮：<br/>你点击了{this.state.button}</div>
+					{['button1','button2','button3','clear'].map((item,index)=>{
+						return (
+							<List
+								key={index}
+								name={item}
+								callback={this.callback.bind(this)}
+							/>
+						)
+					})}
 				</div>
-
 			</div>
 		);
 	}
