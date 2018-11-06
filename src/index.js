@@ -8,6 +8,7 @@ import Search from './view/Search';
 import Notice from './view/Notice';
 import Course from './view/Course';
 import Exam from './view/Exam';
+import StopBubble from './view/StopBubble';
 
 import Context from './view/Context/Context';
 import Super from './view/Context/Super';
@@ -19,11 +20,13 @@ import Sub from './view/Context/Sub';
 ReactDOM.render(
 	<HashRouter>
 		<Switch>
-			<Route path='/search' component={ Search }></Route>
-			<Route path='/notice' component={ Notice }></Route>
-			<Route path='/course' component={ Course }></Route>
-			<Route path='/exam' component={ Exam }></Route>
-			<Route path='/context' component={ Context }></Route>
+			<Route path='/sec01' component={ Search }></Route>
+			<Route path='/sec02' component={ Notice }></Route>
+			<Route path='/sec03' component={ Course }></Route>
+			<Route path='/sec04' component={ Exam }></Route>
+			<Route path='/sec05' component={ Context }></Route>
+			<Route path='/sec05/sec0501' component={ Context }></Route>
+			<Route path='/sec06' component={ StopBubble }></Route>
 			<Route path='/' component={ App }></Route>
 		</Switch>
 	</HashRouter>,

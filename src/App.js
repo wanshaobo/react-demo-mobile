@@ -47,29 +47,15 @@ class App extends React.Component {//PureComponent
 				{/*头部*/}
 				<div className={"head"}>
 					<div className="name">{this.state.name}主页</div>
-					<div>
-						<Link to="search"><img className="search" src={require('./img/home/search.png')} /></Link>
-						<Link to="notice"><img className="message" src={require('./img/home/search.png')} /></Link>
-					</div>
 				</div>
-				{/*两个标签卡片*/}
-				<div className="fdr section2">
-					<div className="item-left item fdr">
-						<Link to="course">
-							<div className='dib content' style={{textAlign:'center'}}>获取手机硬件信息入口</div>
-						</Link>
-					</div>
-					<div className="item-right item fdr">
-						<Link to="exam">
-							<div className='dib content' style={{textAlign:'center'}}>exam</div>
-						</Link>
-					</div>
-					<div className="item-right item fdr">
-						<Link to="context">
-							<div className='dib content' style={{textAlign:'center'}}>context通信入口</div>
-						</Link>
-					</div>
-				</div>
+				<ul className='item'>
+					<li><Link to="sec01">key关键字测试入口</Link></li>
+					<li><Link to="sec02">下拉框组件</Link></li>
+					<li><Link to="sec03">获取手机硬件信息入口</Link></li>
+					<li><Link to="sec04">翻页器</Link></li>
+					<li><Link to="sec05">context通信入口</Link></li>
+					<li><Link to="sec06">阻止冒泡</Link></li>
+				</ul>
 				{/**/}
 				<div style={{border: '1px solid red'}}>
 					<div style={{fontSize: '.6rem'}}>这个地方的文字可以被改变，请点击下面的按钮：<br/>你点击了{this.state.button}</div>

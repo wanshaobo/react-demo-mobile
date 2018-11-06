@@ -10,16 +10,9 @@ export default class Context extends Component {//PureComponent
 	}
 
 	render() {
+		console.log(this.props);//
 		return (
-			<Router>
-				<div>
-					<div>父子组件通信</div>
-					<Link to="super">
-						<div className='dib content' style={{textAlign:'center'}}>获取手机硬件信息入口</div>
-					</Link>
-				</div>
-				<Route exact path="/super" component={ Super }/>
-			</Router>
+			<div>123</div>
 		);
 	}
 }

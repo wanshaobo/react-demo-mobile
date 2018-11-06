@@ -5,6 +5,7 @@ module.exports = {
 	mode: "development",//production
 	entry: {
 		index:'./src/index.js', // 将 第三方依赖 单独打包
+		// vendor:['react']
 	},
 	output: {
 		// sourceMapFilename: '[file].map',

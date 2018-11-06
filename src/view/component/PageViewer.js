@@ -9,12 +9,11 @@ export default class PageViewer extends Component {//PureComponent
 	}
 
 	render() {
-		console.log(this.props.index);
 		return (
 			<div>
-				<div style={{background: Color[this.props.index],height: '7rem'}}></div>
-				<div style={{background: Color[this.props.index],height: '7rem'}}></div>
-				<div style={{background: Color[this.props.index],height: '7rem'}}></div>
+				<div style={{height: '7rem',border:'0.1rem solid #ff4455'}}>1</div>
+				<div style={{height: '7rem'}}>2</div>
+				<div style={{height: '7rem'}}>3</div>
 			</div>
 		);
 	}
