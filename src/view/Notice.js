@@ -12,7 +12,6 @@ export default class Notice extends Component {//PureComponent
 		this.state = {
 			getFruit: '',
 			getDrink:'',
-			closeAll: false
 		}
 	}
 
@@ -28,25 +27,16 @@ export default class Notice extends Component {//PureComponent
 		})
 	}
 
-	closeSelect(e){
-		// console.log('closeSelect')
-		this.setState({
-			closeAll: true
-		})
-	}
-
 	render() {
 		return (
-			<div onClick={this.closeSelect.bind(this)}>
+			<div>
 				<Select
-					closeAll={false}
 					initIndex={0}
 					fruit={fruit}
 					hasSelect = {this.childToParent01.bind(this)}
 				/>
 				<div>您选了：{this.state.getFruit}</div>
 				<Select
-					closeAll={false}
 					initIndex={0}
 					fruit={drink}
 					hasSelect = {this.childToParent02.bind(this)}
