@@ -1,3 +1,4 @@
+/* 十六进制色值 http://www.w3school.com.cn/cssref/css_colorsfull.asp */
 .common-back{
     width: 24px;
     height: 24px;
@@ -11,4 +12,20 @@
 }
 .fs1{
     font-size: 0.5rem;
+}
+.btn{
+    display: inline-block;
+    border: 0.1rem solid #ff6700;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    padding: 0 0.2rem;
+}
+.myInput{
+    width: 5rem;
+    height: 1rem;
+    border: 0.08rem solid #ff6700;
+    font-size: 0.6rem;
+    line-height: 1rem;
+    padding: 0 0.5rem;
 }

@@ -52,9 +52,12 @@ class App extends React.Component {//PureComponent
 					<li><Link to="sec01">key关键字测试入口</Link></li>
 					<li><Link to="sec02">下拉框组件</Link></li>
 					<li><Link to="sec03">获取手机硬件信息入口</Link></li>
-					<li><Link to="sec04">翻页器</Link></li>
-					<li><Link to="sec05">context通信入口</Link></li>
-					<li><Link to="sec06">阻止冒泡</Link></li>
+					<li><Link to="pageview">翻页器</Link></li>
+					<li><Link to="context">context通信入口</Link></li>
+					<li><Link to="stopbubble">阻止冒泡</Link></li>
+					<li><Link to="deeproute">深层路由嵌套</Link></li>
+					<li><Link to="multichild">多子组件渲染优化</Link></li>
+					<li><Link to="input">input</Link></li>
 				</ul>
 				{/**/}
 				<div style={{border: '1px solid red'}}>

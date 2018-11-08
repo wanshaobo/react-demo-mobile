@@ -10,9 +10,15 @@ export default class Exam extends Component {//PureComponent
 
 	render() {
 		return (
-			<div>
+				<div>
 					<PageViewer />
-			</div>
-		);
+				</div>
+			)
 	}
+
+	// render() {
+	// 	return (
+	// 			<div>4</div>
+	// 		)
+	// }
 }

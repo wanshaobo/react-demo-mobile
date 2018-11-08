@@ -1,6 +1,6 @@
 import React, { Component, PureComponent, } from 'react';
 
-export default class Sub extends Component {//PureComponent
+export default class End extends Component {//PureComponent
 
 	constructor(props) {//props,context
 		super(props);
@@ -8,7 +8,7 @@ export default class Sub extends Component {//PureComponent
 
 	render() {
 		return (
-			<div>Sub</div>
+			<div>End</div>
 		);
 	}
 }
