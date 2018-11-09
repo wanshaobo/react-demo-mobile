@@ -16,6 +16,7 @@ import Sub from './view/DeepRoute/Sub';
 import End from './view/DeepRoute/End';
 import Parent from './view/MultiChild/Parent';
 import Input from './view/Input';
+import Select from './view/Select';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 
@@ -40,6 +41,7 @@ ReactDOM.render(
 			<Route path='/deeproute' component={ Super }></Route>
 			<Route path='/multichild' component={ Parent }></Route>
 			<Route path='/input' component={ Input }></Route>
+			<Route path='/select' component={ Select }></Route>
 			<Route path='/' component={ App }></Route>
 		</Switch>
 	</HashRouter>,

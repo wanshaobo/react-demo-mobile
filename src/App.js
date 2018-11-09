@@ -58,6 +58,7 @@ class App extends React.Component {//PureComponent
 					<li><Link to="deeproute">深层路由嵌套</Link></li>
 					<li><Link to="multichild">多子组件渲染优化</Link></li>
 					<li><Link to="input">input</Link></li>
+					<li><Link to="select">select</Link></li>
 				</ul>
 				{/**/}
 				<div style={{border: '1px solid red'}}>
