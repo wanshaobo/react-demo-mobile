@@ -18,6 +18,7 @@ import Parent from './view/MultiChild/Parent';
 import Input from './view/Input';
 import Select from './view/Select';
 
+import NoMatch from './view/NoMatch';
 // ReactDOM.render(<App />, document.getElementById('root'));
 
 //两个路由方案：按需加载 常规加载
@@ -30,6 +31,7 @@ import Select from './view/Select';
 ReactDOM.render(
 	<HashRouter>
 		<Switch>
+			<Route exact path='/' component={ App }></Route>/*exact 表示只匹配指定路由，不向下一层匹配*/
 			<Route path='/sec01' component={ Search }></Route>
 			<Route path='/sec02' component={ Notice }></Route>
 			<Route path='/sec03' component={ Course }></Route>
@@ -42,7 +44,7 @@ ReactDOM.render(
 			<Route path='/multichild' component={ Parent }></Route>
 			<Route path='/input' component={ Input }></Route>
 			<Route path='/select' component={ Select }></Route>
-			<Route path='/' component={ App }></Route>
+			<Route component={NoMatch}></Route>/*所有匹配不到的路由都会命中404*/
 		</Switch>
 	</HashRouter>,
 document.getElementById('root'));
