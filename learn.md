@@ -89,3 +89,12 @@ React的Context,Context解决了一个React中很常见的问题：当你的组�
 
 [JavaScript 对象详解](http://www.365mini.com/page/javascript-new-array.htm)
 
+#### .babelrc
+>rc，run commands，运行命令
+```json
+{
+	"presets": [{"es2015":{"modules":false}}]
+}
+```
+>presets（预设转码）设置项，module设置为false：使ES6模块语法转换到另一个模块类型(默认启用“commonjs”)。 设置为假则不变换模块。或者传入(“amd”、“umd”,“systemjs”、“commonjs”)。
+
