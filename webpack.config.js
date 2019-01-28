@@ -20,7 +20,13 @@ module.exports = {
         //注意：先打包npm run build 再启动服务npm start，才能看到dist文件夹
 		new HtmlWebpackPlugin({//这个插件的作用，不启动服务查看静态项目
 			title:'wanshaobo',
-			template: 'index.html'//源文件 按照当前目录下./index.html这个文件生成
+			template: 'index.html',//源文件 按照当前目录下./index.html这个文件生成
+			minify:{
+				removeAttributeQuotes:true,//去除引号
+				removeComments:true,//去除注释
+				removeEmptyAttributes:true,//去除空属性
+				collapseWhitespace:true//去除空格
+			}
 		})
 	],
 	module: {
